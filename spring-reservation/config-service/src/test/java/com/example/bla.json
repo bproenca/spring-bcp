@@ -1,0 +1,35 @@
+{
+  "name": "reservation-service",
+  "profiles": [
+    "master"
+  ],
+  "label": "master",
+  "version": "26df67c6ef98822e1bd29a68f69ca1a1747079eb",
+  "propertySources": [
+    {
+      "name": "/home/bcp/Downloads/bootiful-microservices-config/reservation-service.properties",
+      "source": {
+        "server.port": "${PORT:8000}",
+        "spring.cloud.stream.bindings.input.group": "reservations-group",
+        "spring.cloud.stream.bindings.input.destination": "reservations",
+        "message": "Hello World bcp!",
+        "spring.cloud.stream.bindings.input.durableSubscription": "true"
+      }
+    },
+    {
+      "name": "/home/bcp/Downloads/bootiful-microservices-config/application.properties",
+      "source": {
+        "logging.level.com.netflix.discovery": "OFF",
+        "debug": "true",
+        "logging.level.org.springframework.security": "DEBUG",
+        "spring.sleuth.sampler.percentage": "1.0",
+        "logging.level.com.netflix.eureka": "OFF",
+        "server.port": "${PORT:0}",
+        "endpoints.shutdown.enabled": "true",
+        "info.id": "${spring.application.name}",
+        "spring.jpa.generate-ddl": "true",
+        "spring.sleuth.log.json.enabled": "true"
+      }
+    }
+  ]
+}

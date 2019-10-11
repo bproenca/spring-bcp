@@ -1,0 +1,1 @@
+Requires eureka-service to be up and running in order to "discover" the reservation-service URL
