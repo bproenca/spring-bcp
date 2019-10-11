@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrintHostName",
+            "request": "launch",
+            "mainClass": "br.com.bcp.currencyexchangeservice.PrintHostName",
+            "projectName": "currency-exchange-service"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AppExchange",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "br.com.bcp.currencyexchangeservice.AppExchange",
+            "args": "",
+            "projectName": "currency-exchange-service"
+        }
+    ]
+}
