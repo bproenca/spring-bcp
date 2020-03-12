@@ -1,0 +1,29 @@
+POST http://localhost:8080/comments
+Content-Type: application/json
+
+{
+  "title": "great title",
+  "content": "great content",
+  "author": "author",
+  "postId": "49937336-d60d-43f4-87f3-1e3c2e481d35"
+}
+
+###
+
+GET http://localhost:8080/comments?page=0&size=5&postId=49937336-d60d-43f4-87f3-1e3c2e481d35
+Content-Type: application/json
+
+###
+
+PUT http://localhost:8080/comments
+Content-Type: application/json
+
+{
+  "id": "18c81f11-4c43-4709-84c3-77e0890d466b",
+  "title": "great title2",
+  "content": "great content2",
+  "author": "author",
+  "postId": "49937336-d60d-43f4-87f3-1e3c2e481d35"
+}
+
+###
